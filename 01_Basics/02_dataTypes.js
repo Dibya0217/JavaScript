@@ -36,8 +36,53 @@ console.log(Boolean(-1)); // true
 let g;
 console.log(g); // undefined
 console.log(typeof g); // undefined
+let i = undefined;
+console.log(i); // undefined
 
 // null
 let h = null;
 console.log(h); // null
 console.log(typeof h); // object
+
+
+// symbol
+let sym1 = Symbol('123');
+let sym2 = Symbol('123');
+console.log(sym1); // 123
+console.log(sym2); // 123
+console.log(sym1 == sym2); // false
+console.log(sym1 === sym2); // false
+console.log(typeof sym1); // symbol
+console.log(typeof sym2); // symbol
+let sym3 = sym1;
+console.log(sym1 == sym3); // true
+console.log(sym1 === sym3); // true
+// sym1.description = 'Hello';
+// console.log(sym1.description); // TypeError: Cannot set property description of [object Symbol] which has only a getter at object
+
+
+
+// bigint
+let j = 123456789n;
+console.log(j); // 123456789n
+console.log(typeof j); // bigint
+
+// array
+const students = ["Dibya", "Aamir", "Pradeep", "Rohit", "Iswar", "Akash"];
+console.log(students); // [ 'Dibya', 'Aamir', 'Pradeep', 'Rohit', 'Iswar', 'Akash' ]
+console.log(typeof students); // object
+
+// object
+let myObj = {
+    name : "Dibya",
+    age : 23
+}
+console.log(myObj); // { name: 'Dibya', age: 23 }
+console.log(typeof myObj); // object
+
+// function
+let myFunction = function() {
+    console.log("Hello World");
+}
+console.log(myFunction()); // undefined
+console.log(typeof myFunction); // function
