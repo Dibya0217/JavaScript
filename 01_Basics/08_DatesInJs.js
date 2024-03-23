@@ -19,7 +19,14 @@
 // let myCreatedDate3 = new Date("2024-03-22")
 // console.log(myCreatedDate3.toLocaleString()); // 22/3/2024, 5:30:00 am
 
-let myCreatedDate4 = new Date("2024-03-22")
-let myTimeStamp = Date.now();
-console.log(myTimeStamp);
-console.log(myCreatedDate4.getTime());
+// let myCreatedDate4 = new Date("2024-03-22")
+// let myTimeStamp = Date.now();
+// console.log(myTimeStamp);
+// console.log(myCreatedDate4.getTime());
+// console.log(Math.floor(Date.now()/1000));
+
+let newDate = new Date();
+console.log(newDate); // 2024-03-23T14:12:33.989Z
+console.log(newDate.getMonth()); // 2
+console.log(newDate.getDay()); // 6
+
